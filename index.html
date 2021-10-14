@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Herencia Hispana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <!--------------------------ENCABEZADO-------------------------------------->
+    <div class=""><img src="img/back.png" class="img-fluid" alt="" width="100%" height="350"/></div>
+    
+    <!--------------------------CUERPO------------------------------------------>
+    
+    <div class="container-fluid" style="height: 200px">    
+        <div class="row p-2">
+            <div class="col-sm">
+                <!--<div class="container-sm">
+                    <video width="100%" height="400px" controls>
+                      <source src="img/20190126_161022.mp4" type="video/mp4">
+                    </video>
+                </div>-->
+                <div class="embed-responsive embed-responsive-4by3 mb-2">
+                  <iframe class="embed-responsive-item" src="img/videofinal.mp4" allowfullscreen style="height: 350px; width: 100%"></iframe>
+                </div>
+            </div>
+            <div class="col-7">
+                  <div class="container-sm">
+                      <div class="row row-cols-2 row-cols-sm-2">
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#resumen" src="img/elpidio.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#cultura" src="img/celebraciones.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#deporte" src="img/deporte.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>  
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#simbolos" src="img/simbolos.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>  
+                        </div>
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#comida" src="img/comida.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card w-100 card-border mb-2">
+                                <img type="button" data-toggle="modal" href="#curiosidades" src="img/curiosidades.png" class="card-img-top btn btn-primary" alt="...">
+                            </div>  
+                        </div>
+                      </div>
+                  </div> 
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    
+    <!------------------Descripcion General------------------------------------------------------------->
+    <div class="modal fade" id="resumen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Descripción General</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+                <img src="img/Resumen.png" class="img-fluid rounded" alt="..." />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <!------------------Cultura----------------------------------------------------------------->
+    
+    <div class="modal fade" id="cultura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cultura</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+                <!----------Carousel Cultura----------------->
+                <div id="carouselCultura" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/feriaflores.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carnaval.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/annonuevo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/musicadanza.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" role="button" href="#carouselCultura" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                  <a class="carousel-control-next" role="button" data-target="#carouselCultura" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                </div>                
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-----------------------Deporte--------------------------------------------------------->
+    
+    <div class="modal fade" id="deporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Deporte y Recreación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+        <!---------------------Carousel Deporte------------------------------------>
+                <div id="carouselDeporte" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/beisbol.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/bolas.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/trompo.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" role="button" href="#carouselDeporte" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                  <a class="carousel-control-next" role="button" data-target="#carouselDeporte" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                </div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <!---------------------------Simbolos---------------------------------------------------------------------->
+    
+    <div class="modal fade" id="simbolos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Símbolos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+        <!---------------------Carousel Simbolos------------------------------------>
+                <div id="carouselSimbolos" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/bandera.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/himno.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/escudo.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" role="button" href="#carouselSimbolos" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                  <a class="carousel-control-next" role="button" data-target="#carouselSimbolos" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                </div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+     <!---------------------------Comida---------------------------------------------------------------------->
+    
+    <div class="modal fade" id="comida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comidas típicas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+        <!---------------------Carousel Comida------------------------------------>
+                <div id="carouselComida" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/ropavieja.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/congris.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/yuca.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" role="button" href="#carouselComida" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                  <a class="carousel-control-next" role="button" data-target="#carouselComida" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                  </a>
+                </div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!---------------------------Curiosidades------------------------------------------------------------------>
+    
+    <div class="modal fade" id="curiosidades" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Curiosidades</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-md">
+                <img src="img/curiosidadestexto.png" class="img-fluid rounded" alt=""/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+►</html>
